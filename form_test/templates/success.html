@@ -1,0 +1,6 @@
+@app.route('/users', methods=['POST'])
+def create_user():
+   name = request.form['name']
+   email = request.form['email']
+	 # Here's the line that changed. We're rendering a template from a post route now.
+   return render_template('success.html')
